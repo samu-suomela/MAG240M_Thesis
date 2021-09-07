@@ -10,10 +10,12 @@ labels = dataset.paper_label
 
 print("Edges and labels loaded")
 
-G = igraph.Graph()
+start_time = time.time()
+
+G = Graph()
 G.add_edges(paper_to_paper.T)
 
-print("Graph created")
+print("Graph creation took %s seconds" % (time.time() - start_time))
 
 loop_count = 0
 start_time = time.time()
