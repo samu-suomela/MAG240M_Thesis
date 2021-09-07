@@ -5,15 +5,14 @@ import time
 from ogb.lsc import MAG240MDataset
 
 dataset = MAG240MDataset(root = "/wrk/users/sjsuomel/data/")
-paper_to_paper = dataset.edge_index('paper', 'paper')
+paper_to_paper = dataset.edge_index('paper', 'paper').T.tolist()
 labels = dataset.paper_label
 
 print("Edges and labels loaded")
 
 start_time = time.time()
 
-G = Graph()
-G.add_edges(paper_to_paper.T)
+G = Graph(edges = paper_to_paper)
 
 print("Graph creation took %s seconds" % (time.time() - start_time))
 
