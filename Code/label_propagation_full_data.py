@@ -5,7 +5,9 @@ from ogb.lsc import MAG240MDataset
 
 dataset = MAG240MDataset(root = "/wrk/users/sjsuomel/data/")
 paper_to_paper = dataset.edge_index('paper', 'paper')
-labels = dataset.paper_label
+real_labels = dataset.paper_label
+
+labels = np.copy(real_labels)
 
 print("Edges and labels loaded")
 
