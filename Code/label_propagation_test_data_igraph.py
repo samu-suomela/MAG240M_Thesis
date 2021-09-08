@@ -24,6 +24,14 @@ print("Edges and labels loaded")
 G = Graph(edges=paper_to_paper)
 
 print(G.vcount(), G.ecount())
+
+target_nodes = paper_to_paper[paper_to_paper[0]==52]
+source_nodes = paper_to_paper[paper_to_paper[1]==0]
+
+print(target_nodes)
+print(source_nodes)
+print(paper_to_paper)
+
 # print("Graph created")
 
 # loop_count = 0
