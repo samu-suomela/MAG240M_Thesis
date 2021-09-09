@@ -9,14 +9,16 @@ real_labels = dataset.paper_label
 
 labels = np.copy(real_labels)
 
-print("Edges and labels loaded")
+with open("label_prop_output.txt", "a") as f:
+    print("Edges and labels loaded", file=f)
 
 loop_count = 0
 start_time = time.time()
 
 while True:
     loop_count += 1 # safety valve in case we never reach convergence
-    print("Loop count:", loop_count)
+    with open("label_prop_output.txt", "a") as f:
+        print("Loop count:", loop_count, file=f)
     converged = True
     for node in range(len(labels)):
         neighbor_labels = {}
@@ -38,14 +40,18 @@ while True:
                 converged = False # we never reach this point if labels are not updated
 
     if converged:
-        print("Converged.")
+        with open("label_prop_output.txt", "a") as f:
+            print("Converged.", file=f)
         break
     if loop_count == 15:
-        print("Loopcount reached.")
+        with open("label_prop_output.txt", "a") as f:
+            print("Loopcount reached.", file=f)
         break
-
-print("Label propagation took %s seconds" % (time.time() - start_time))
+    
+with open("label_prop_output.txt", "a") as f:
+    print("Label propagation took %s seconds" % (time.time() - start_time), file=f)
 
 np.save("/wrk/users/sjsuomel/results/label_propagation_results", labels) # save predicted labels for evaluation
 
-print("File successfully saved!")
+with open("label_prop_output.txt", "a") as f:
+    print("File successfully saved!", file=f)
