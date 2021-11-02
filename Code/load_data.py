@@ -1,8 +1,8 @@
 from ogb.lsc import MAG240MDataset
 import numpy as np
 
-dataset = MAG240MDataset(root = "/wrk/users/sjsuomel/data/")
-
+#dataset = MAG240MDataset(root = "/wrk/users/sjsuomel/data/")
+dataset = MAG240MDataset(root = "/Volumes/Seagate Backup Plus Drive/Gradu/")
 # Basic properties
 
 print(dataset.num_papers) # number of paper nodes
