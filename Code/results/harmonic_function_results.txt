@@ -1,0 +1,35 @@
+Number of unique labels: 16
+Number of train labels: (186,)
+Number of unknown labels: (47,)
+Total number of known labels: (233,)
+Dataset small has 3069 edges and 1582 nodes.
+Accuracy for dataset small : 0.3829787234042553
+Algorithm took 0.6475064754486084 seconds.
+Number of unique labels: 21
+Number of train labels: (634,)
+Number of unknown labels: (159,)
+Total number of known labels: (793,)
+Dataset medium has 19253 edges and 7841 nodes.
+Accuracy for dataset medium : 0.29559748427672955
+Algorithm took 0.2934885025024414 seconds.
+Number of unique labels: 32
+Number of train labels: (1856,)
+Number of unknown labels: (464,)
+Total number of known labels: (2320,)
+Dataset large has 89512 edges and 31189 nodes.
+Accuracy for dataset large : 0.21767241379310345
+Algorithm took 2.9916341304779053 seconds.
+Number of unique labels: 45
+Number of train labels: (4684,)
+Number of unknown labels: (1171,)
+Total number of known labels: (5855,)
+Dataset xl has 351670 edges and 94690 nodes.
+Accuracy for dataset xl : 0.2937660119555935
+Algorithm took 21.495455980300903 seconds.
+Number of unique labels: 63
+Number of train labels: (9481,)
+Number of unknown labels: (2371,)
+Total number of known labels: (11852,)
+Dataset xxl has 1016389 edges and 256092 nodes.
+Accuracy for dataset xxl : 0.3496415014761704
+Algorithm took 115.7261815071106 seconds.

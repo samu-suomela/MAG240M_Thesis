@@ -1,0 +1,5 @@
+small: Test set results: cost= 0.31773 accuracy= 0.02128 time= 0.14811
+medium: Test set results: cost= 0.31484 accuracy= 0.03774 time= 1.12133
+large: Test set results: cost= 0.30143 accuracy= 0.02802 time= 6.98196
+xl : Test set results: cost= 0.26591 accuracy= 0.03074 time= 18.37488
+xxl : Test set results: cost= 0.19546 accuracy= 0.02151 time= 54.83359

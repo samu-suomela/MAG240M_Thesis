@@ -1,0 +1,24 @@
+Dataset small has (3092, 2) edges and (1582,) nodes.
+Number of unique labels: 16
+Number of train labels: (186,)
+Number of unknown labels: (47,)
+Total number of known labels: (233,)
+Converged.
+Label propagation for dataset small took 7.8082005977630615 seconds
+Accuracy for dataset of size small : 0.3617021276595745
+Dataset medium has (19366, 2) edges and (7841,) nodes.
+Number of unique labels: 21
+Number of train labels: (634,)
+Number of unknown labels: (159,)
+Total number of known labels: (793,)
+Converged.
+Label propagation for dataset medium took 375.1189658641815 seconds
+Accuracy for dataset of size medium : 0.389937106918239
+Dataset large has (90009, 2) edges and (31189,) nodes.
+Number of unique labels: 32
+Number of train labels: (1856,)
+Number of unknown labels: (464,)
+Total number of known labels: (2320,)
+Converged.
+Label propagation for dataset large took 11815.509122610092 seconds
+Accuracy for dataset of size large : 0.646551724137931

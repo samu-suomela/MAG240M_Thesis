@@ -18,7 +18,7 @@ papers = np.concatenate((papers, citations), axis=None)
 
 sizes = ["small","medium","large","xl", "xxl"]
 
-n = 6
+n = 2
 
 for i in range(n):
     mask_cites = np.in1d(edge_index_cites[0],papers) # boolean array with True values for citations
