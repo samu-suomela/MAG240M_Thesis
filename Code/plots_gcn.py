@@ -14,7 +14,7 @@ plt.show()
 Time = [0.14, 1.1, 7.0, 18.4, 54.8]
 
 plt.plot(Dataset, Time)
-plt.yticks(np.arange(0, 120, step=10))
+plt.yticks(np.arange(0, 70, step=10))
 plt.title('Computational speed')
 plt.xlabel('Dataset')
 plt.ylabel('Time (min)')

@@ -11,12 +11,12 @@ plt.xlabel('Dataset')
 plt.ylabel('Accuracy')
 plt.show()
 
-Time = [8, 375, 11816, 0, 0]
+Time = [0.13, 6.25, 196.93, 0, 0]
 
 plt.plot(Dataset, Time)
-plt.yticks(np.arange(0, 120, step=10))
+plt.yticks(np.arange(0, 1500, step=100))
 plt.title('Computational speed')
 plt.xlabel('Dataset')
-plt.ylabel('Time (s)')
+plt.ylabel('Time (min)')
 plt.show()
 
