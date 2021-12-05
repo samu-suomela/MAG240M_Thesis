@@ -1,2 +1,0 @@
-Edges and labels loaded
-Loop count: 1

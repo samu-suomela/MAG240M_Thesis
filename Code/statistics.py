@@ -2,7 +2,7 @@ import numpy as np
 import os
 
 path = os.getcwd()
-sizes = ["small", "medium", "large", "xl"]
+sizes = ["small", "medium", "large", "xl", "xxl"]
 
 for size in sizes:
     edgelist = np.load("{}/test_data_collection/test_data_{}/cites_{}.npy".format(path,size,size))
